@@ -1,0 +1,126 @@
+# Generic residence-hall defaults. Adjust these to your own program.
+semester:
+  name: Fall 2026
+  start_date: '2026-08-31'
+  end_date: '2026-12-20'
+  timezone: America/New_York
+budget:
+  cap_cents: 15000
+  hall_snacks_count: 6
+outcomes:
+  count: 3
+  prefix: 'Residents will'
+  action_verbs:
+    remember: [define, identify, list, name, recognize, recall, select, state]
+    understand: [classify, compare, describe, discuss, explain, summarize]
+    apply: [apply, demonstrate, practice, solve, use]
+    analyze: [analyze, categorize, contrast, distinguish, examine, investigate]
+    evaluate: [assess, critique, evaluate, justify, recommend]
+    create: [build, compose, create, design, develop, plan, produce]
+    affective: [advocate, collaborate, contribute, share, support]
+  vague_phrases: [understand, know, be exposed to, be familiar with]
+  measurable_markers: ['one', 'two', 'three', 'at least', 'each', 'a plan', 'an example']
+  time_markers: ['by the end', 'during the event', 'at the event', 'before leaving', 'during the activity']
+focus_areas:
+  - Roommate conflicts
+  - Cleanliness
+  - Conflict management
+  - Academic success
+  - Belonging, community & connection
+  - International students / diversity
+  - Health & wellness
+event_types:
+  Hall Snacks:
+    first_week: 1
+    last_week: 6
+    no_collaborations_through_week: 3
+    weekly: true
+  CDP / All-Hall:
+    collaborator_count: 1
+    building_trend_required: true
+blocked_windows:
+  - {label: Hall Council, weekday: 2, start: '19:00', end: '21:00', event_types: [Hall Snacks]}
+locations:
+  - {name: quiet lounge, shared: true}
+  - {name: social lounge A, shared: true}
+  - {name: social lounge B, shared: true}
+  - {name: lobby, shared: true}
+  - {name: courtyard, shared: true}
+  - {name: floor, shared: false}
+  - {name: outside, shared: false}
+  - {name: out-of-hall, shared: false}
+requirements:
+  - CoBu proposal
+  - Space reservation for shared spaces
+  - Marketing
+  - Attendance tracking
+  - CoBu evaluation
+assessment:
+  instructions: Explain how each outcome was met, using an observed activity or other evidence. Never invent attendance or observations.
+  example: Residents recorded the name of someone new during the activity, and the organizer observed conversations between residents who had not met before.
+drafting:
+  default_headcount: 15
+  default_event_type: Hall Snacks
+  default_start_time: '19:00'
+  default_end_time: '20:00'
+  default_location: social lounge A
+  default_focus: Belonging, community & connection
+  default_community: Residence hall residents
+  profiles:
+    smores:
+      keywords: [s'mores, smores, s’mores, marshmallow]
+      title: S’mores & new friends
+      description: Set up a no-flame s’mores snack station. Invite residents to introduce themselves, pair up with someone new, and swap stories about their first weeks in the hall.
+      focus: Belonging, community & connection
+      outcomes:
+        - name at least one new resident by the end of the event.
+        - share one personal interest with another resident during the event.
+        - identify one way to stay connected with a new acquaintance before leaving.
+      supplies:
+        - {name: Graham crackers, quantity: 2, unit_cost_cents: 350, serves: 25, channel: Grocery}
+        - {name: Marshmallows, quantity: 1, unit_cost_cents: 300, serves: 25, channel: Grocery}
+        - {name: Chocolate bars, quantity: 2, unit_cost_cents: 400, serves: 25, channel: Grocery}
+        - {name: Plates & napkins, quantity: 1, unit_cost_cents: 300, serves: 25, channel: Grocery}
+    study:
+      keywords: [study, academic, exam, finals, homework]
+      title: The study break
+      description: Make room for a short snack break between study sessions. Residents share a study strategy, compare campus resources, and leave with a simple plan for their next assignment.
+      focus: Academic success
+      outcomes:
+        - share one study strategy with another resident during the event.
+        - identify one academic support resource by the end of the event.
+        - create a plan for one upcoming assignment before leaving.
+      supplies:
+        - {name: Popcorn, quantity: 2, unit_cost_cents: 350, serves: 25, channel: Grocery}
+        - {name: Tea & hot chocolate, quantity: 1, unit_cost_cents: 600, serves: 25, channel: Grocery}
+        - {name: Cups & napkins, quantity: 1, unit_cost_cents: 350, serves: 25, channel: Grocery}
+    craft:
+      keywords: [craft, paint, bracelet, art, draw, creative]
+      title: Craft & connect
+      description: Set out simple craft supplies for residents to make something together. Use conversation prompts to help neighbors share interests and introduce a new friend to the group.
+      focus: Belonging, community & connection
+      outcomes:
+        - create one personal craft during the event.
+        - share one personal interest with another resident during the activity.
+        - name at least one new neighbor by the end of the event.
+      supplies:
+        - {name: Colored paper, quantity: 1, unit_cost_cents: 500, serves: 25, channel: Grocery}
+        - {name: Markers, quantity: 1, unit_cost_cents: 700, serves: 25, channel: Amazon}
+        - {name: Glue sticks, quantity: 1, unit_cost_cents: 400, serves: 25, channel: Amazon}
+    general:
+      keywords: []
+      title: A gathering for our community
+      description: Invite residents to a welcoming group activity with time for introductions and conversation. Adjust this description to explain the specific activity you have in mind.
+      focus: Belonging, community & connection
+      outcomes:
+        - name at least one new neighbor by the end of the event.
+        - share one personal interest with another resident during the event.
+        - identify one shared interest with another resident before leaving.
+      supplies:
+        - {name: Supplies to confirm, quantity: 1, unit_cost_cents: 0, serves: 25, channel: Grocery}
+flyers:
+  styles: [Minimal, Playful, Bold]
+connectors:
+  calendar: {enabled: false}
+  canva: {enabled: false}
+  ai: {enabled: false}

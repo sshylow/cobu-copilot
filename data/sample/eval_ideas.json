@@ -1,0 +1,17 @@
+cd "/Users/shilohokechukwu/Documents/Codex/2026-10-01/doo-i/cobu-copilot"
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+export OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
+python -m uvicorn app.main:app --host 127.0.0.1 --port 8849[
+  {"id":1,"idea":"S'mores night for 25 first-years on October 2, 2026 at 7 pm in social lounge A with a $25 budget."},
+  {"id":2,"idea":"A study break for 20 residents in quiet lounge, with snacks and one shared study tip each."},
+  {"id":3,"idea":"Craft and connect with 20 residents and $25 for paper and markers."},
+  {"id":4,"idea":"Hall Snacks on Wednesday September 30, 2026 from 7 pm to 8 pm."},
+  {"id":5,"idea":"A collaborative Hall Snacks event in the first semester week."},
+  {"id":6,"idea":"Roommate conversation night with a goal that residents understand conflict."},
+  {"id":7,"idea":"A free event using supplies we already own, for 15 residents."},
+  {"id":8,"idea":"Floor Engagement on December 12, 2026 with another floor."},
+  {"id":9,"idea":"An all-hall event responding to a building trend, organized by two RAs."},
+  {"id":10,"idea":"A $200 snack night with a semester budget of $150."}
+]
